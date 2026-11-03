@@ -7,3 +7,9 @@ app.include_router(task_router)
 @app.get("/")
 def root():
     return {"message": "Welcome to Task Tracker v1.0"}
+
+@app.get("/")
+def root():
+    return {"error": "Broken build"}
+
+# Broken experimental feature
