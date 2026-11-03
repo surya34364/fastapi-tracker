@@ -6,4 +6,4 @@ app.include_router(task_router)
 
 @app.get("/")
 def root():
-    return {"message": "API is online"}
+    return {"message": "API System Operational - Production"}
