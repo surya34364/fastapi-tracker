@@ -9,3 +9,6 @@ class TaskResponse(BaseModel):
 class TaskListResponse(BaseModel):
     count: int
     tasks: List[TaskResponse]
+
+class TaskCreate(BaseModel):
+    title: str
