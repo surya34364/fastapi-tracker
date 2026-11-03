@@ -6,4 +6,4 @@ app.include_router(task_router)
 
 @app.get("/")
 def root():
-    return {"message": "API is online"}
+    return {"message": "Welcome to Task Tracker v1.0"}
