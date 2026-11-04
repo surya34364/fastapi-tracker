@@ -8,5 +8,10 @@ app.include_router(task_router)
 def root():
     return {"message": "Welcome to Task Tracker v1.0"}
 
+@app.get("/")
+def home():
+    return {"status": "online", "message": "FastAPI Tracker is running"}
 
-#comment for testing 
+@app.get("/health")
+def health_check():
+    return {"status": "healthy", "message": "FastAPI Tracker is healthy"}
